@@ -18,12 +18,13 @@ body{
 }
 
 .section-padding{
-    padding: 70px 0;
+    padding: 70px 0;}
 
 .carousel-item img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
 }
 .carousel-caption {
     position: absolute;
@@ -64,21 +65,17 @@ body{
     z-index: 1;
 }
 
-/* Ajustes generales para el carrusel */
-.carousel-item img {
-    height: auto; /* Mantener proporciones */
-    max-height: 500px; /* Altura máxima para imágenes grandes */
-    object-fit: cover; /* Ajuste de imagen */
-}
+
 
 /* Estilos para el texto */
 .titulo-carousel {
     font-size: 2rem; /* Tamaño grande en pantallas mayores */
     font-weight: bold;
+    
 }
 
 .texto-carousel {
-    font-size: 6rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -92,7 +89,7 @@ body{
     color: #ffffff !important; /* Cambia el color primario a dorado */
 }
 
-.navbar-dark .navbar-brand {
+.navbar-brand {
     color: #f811ed;
     font-size: 25px;
     text-transform: uppercase;
@@ -140,6 +137,10 @@ body{
     margin-bottom: 20px; /* Espacio entre párrafos */
     font-size: 20px;
 }
+.card-text
+{
+    text-align: justify;
+}
 .plantilla .container {
     max-width: 1200px;
     margin: auto;
@@ -169,6 +170,33 @@ body{
     }
 }
 
+/* Asegura que el footer ocupe todo el ancho de la pantalla */
+.footer {
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+}
 
+/* Asegura que las imágenes se ajusten y tengan un margen inferior */
+.footer img {
+    max-width: 100%; /* Hace que las imágenes no excedan el ancho de su contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin-bottom: 10px; /* Añade un margen entre las imágenes */
+}
 
+/* Asegura que el texto esté alineado correctamente */
+.footer .d-flex {
+    align-items: center;
+}
+
+/* Asegura que el texto en el pie de página se vea bien en pantallas pequeñas */
+.footer p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Agrega un margen adicional entre los enlaces del menú */
+footer ul li {
+    margin-bottom: 10px;
 }
